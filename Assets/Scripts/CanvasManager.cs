@@ -17,22 +17,35 @@ public class CanvasManager : MonoBehaviour
     private Color32 Green = new Color32(229, 227, 255, 255);
 
 
-    //Restarts the Program
-    public void restart()
+
+    public void kaltura()
     {
-        //Reloads the Scene
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+        SceneManager.LoadScene("Kaltura");
     }
 
-
-    public void selectbutton()
+    public void google()
     {
-
+        SceneManager.LoadScene("Google");
     }
 
-    public void back()
+    public void zoom()
     {
+        SceneManager.LoadScene("Zoom");
+    }
+    public void menu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 
+    public void connect()
+    {
+        SceneManager.LoadScene("Connecting");
+    }
+
+    public void classview()
+    {
+        SceneManager.LoadScene("Classview");
     }
 
     //Turns off Object (Sets it to inactive)
@@ -42,46 +55,8 @@ public class CanvasManager : MonoBehaviour
     }
 
 
-    //Turns on the object, if it is a button then it sets it to interactable
-    public void objectOn(GameObject gameObject)
-    {
-        gameObject.SetActive(true);
-        if (gameObject.tag == "Button")
-        {
-            gameObject.GetComponent<Button>().interactable = true;
-        }
-    }
-
-    //Toggles the button's interactable
-    public void buttonToggle(GameObject gameObject)
-    {
-        if (!gameObject.GetComponent<Button>().interactable)
-        {
-            gameObject.GetComponent<Button>().interactable = true;
-        }
-        else
-        {
-            gameObject.GetComponent<Button>().interactable = false;
-        }
-
-    }
-
-    //Toggles the button's interactable
-    public void toggleOff(GameObject gameObject)
-    {
-   
-            gameObject.GetComponent<Toggle>().interactable = false;
 
 
-    }
-
-    public void toggleON(GameObject gameObject)
-    {
-
-        gameObject.GetComponent<Toggle>().interactable = true;
-
-
-    }
 
     //Sets the Objects colour to Green
     public void buttongreen(GameObject button)
@@ -113,50 +88,18 @@ public class CanvasManager : MonoBehaviour
     }
 
 
-    //Course number function
-    //public void courseNumber(GameObject gameobject)
-    //{
-    //    //inputField is the input object, inputFieldTasks[0] is the first task, [1] is the second task
-    //    //gameobject is button
-    //    //if the course number is correct:
-    //    if (inputField.GetComponent<InputField>().text.ToUpper() == courseNumberString)
-    //    {
-    //        //finish the task
-    //        task.GetComponent<Tasks>().finishTask(inputFieldTasks[0]);
-
-    //        //set the button to green
-    //        buttongreen(gameobject);
-
-    //        //set the input field to white
-    //        buttonwhite(inputField);
-          
-    //        //turn on the button
-    //        objectOn(gameobject);
-           
-
-    //    }
-    //    //if the course number is not correct
-    //    else
-    //    {
-    //        //turn off the button
-    //        objectOff(gameobject);
-            
-    //        //unfinish the task and dont show the next one
-    //        task.GetComponent<Tasks>().tasksList[inputFieldTasks[0]].transform.GetChild(0).gameObject.SetActive(false);
-    //        task.GetComponent<Tasks>().tasksList[inputFieldTasks[1]].SetActive(false);
-
-    //        //set the inputfield to green
-    //        buttongreen(inputField);
-    //        //set the button to white
-    //        buttonwhite(gameobject);
-    //    }
-    //}
-
 
     //Sets the scroll bar's value to 1
     public void setScrollto1(GameObject scrollBar)
     {
-        scrollBar.GetComponent<Scrollbar>().value = 1;
+        if (scrollBar.GetComponent<Scrollbar>().value > 0.2)
+        {
+            scrollBar.GetComponent<Scrollbar>().value = 1;
+            scrollBar.GetComponent<Scrollbar>().interactable = false;
+        }
+        
     }
+
+
 
 }
