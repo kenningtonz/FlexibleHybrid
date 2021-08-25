@@ -6,15 +6,75 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 0631b0550d2db824aa9b3373b2c45acb
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 7d0a3a5956396a343a10223ed8ecb310
   - enabled: 1
-    path: Assets/Scenes/Google.unity
+    path: Assets/Scenes/Google Meet/Google.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Zoom.unity
+    path: Assets/Scenes/Google Meet/GoogleMeet Monitor.unity
+    guid: 22790b056bd56044bb22de313bccc37f
+  - enabled: 1
+    path: Assets/Scenes/Google Meet/GoogleMeet Power.unity
+    guid: c575ea9910e32b94989d155d711c7c84
+  - enabled: 1
+    path: Assets/Scenes/Google Meet/GoogleMeet Settings.unity
+    guid: d44ec026f82c2a34e87e637ad72b1732
+  - enabled: 1
+    path: Assets/Scenes/Google Meet/GoogleMeet Video.unity
+    guid: 31bf38ad05f09574ebe25c6c87ae5319
+  - enabled: 1
+    path: Assets/Scenes/Kaltura/Kaltura.unity
+    guid: 5f5ab08db98e26043854d0e251cf6947
+  - enabled: 1
+    path: Assets/Scenes/Kaltura/Kaltura Power.unity
+    guid: eb66c57b4b0e764458fdb99888b0c109
+  - enabled: 1
+    path: Assets/Scenes/Kaltura/Kaltura Monitor.unity
+    guid: d45c11b4377b4f24687b7a751e9cc91f
+  - enabled: 1
+    path: Assets/Scenes/Kaltura/Kaltura Settings.unity
+    guid: 762a086731a4bc9419fe11073c87d847
+  - enabled: 1
+    path: Assets/Scenes/Kaltura/Kaltura Video.unity
+    guid: 7df3b96bacade654fb1a268fb411fdc5
+  - enabled: 1
+    path: Assets/Scenes/Zoom/Zoom.unity
     guid: 83eb45930e446854e9006c60a87667d5
   - enabled: 1
-    path: Assets/Scenes/Kaltura.unity
-    guid: 5f5ab08db98e26043854d0e251cf6947
+    path: Assets/Scenes/Zoom/Zoom Video.unity
+    guid: 34ee52fb399278f43a97865440356ca7
+  - enabled: 1
+    path: Assets/Scenes/Zoom/Zoom Settings.unity
+    guid: 94050a0d6748bca408fd1fc71b42a921
+  - enabled: 1
+    path: Assets/Scenes/Zoom/Zoom Monitor.unity
+    guid: 2fdd14be6ebd1c045a45fee8e5c7fb4c
+  - enabled: 1
+    path: Assets/Scenes/Zoom/Zoom Power.unity
+    guid: 8e1c3abffdc76364c94264578111dca5
+  - enabled: 0
+    path: Assets/Scenes/Google Meet/Google ClassView.unity
+    guid: e76e850c833b12c428811775db43dd6f
+  - enabled: 1
+    path: Assets/Scenes/Google Meet/Google Projector.unity
+    guid: d44b5043e4b9e2c4b96020def5f55839
+  - enabled: 1
+    path: Assets/Scenes/Kaltura/Kaltura Projector.unity
+    guid: 9731a52a54a6928418001001ce3f1fb8
+  - enabled: 1
+    path: Assets/Scenes/Kaltura/Kaltura ClassView.unity
+    guid: 4e9e26d7cefec024bb8955df94eea6f9
+  - enabled: 1
+    path: Assets/Scenes/Zoom/Zoom ClassView.unity
+    guid: 46a15d276f0f33042b82e53f72cc8ee9
+  - enabled: 1
+    path: Assets/Scenes/Zoom/Zoom Projector.unity
+    guid: fe25ebc7ca635764d8c0eb2d254ac89f
+  - enabled: 1
+    path: Assets/Scenes/Google ClassView.unity
+    guid: adc7801208341b84b880c5b5ec8880ab
   m_configObjects: {}

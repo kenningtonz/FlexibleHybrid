@@ -17,35 +17,116 @@ public class CanvasManager : MonoBehaviour
     private Color32 Green = new Color32(229, 227, 255, 255);
 
 
-
-    public void kaltura()
+    public void url()
     {
+        Application.OpenURL("https://itsc.ontariotechu.ca/flexible-hybrid-learning/index.php");
+    }
+    public void kaltura(int numofscene)
+    {
+        switch (numofscene)
+        {
+            case 0:
+                 SceneManager.LoadScene("Kaltura");
+                break;
+            case 1:
+                SceneManager.LoadScene("Kaltura Settings");
+                break;
+            case 2:
+                SceneManager.LoadScene("Kaltura Monitor");
+                break;
+            case 3:
+                SceneManager.LoadScene("Kaltura Power");
+                break;
+            case 4:
+                SceneManager.LoadScene("Kaltura Video");
+                break;
+            case 5:
+                SceneManager.LoadScene("Kaltura Projector");
+                break;
+            case 6:
+                SceneManager.LoadScene("Kaltura ClassView");
+                break;
 
-        SceneManager.LoadScene("Kaltura");
+        }
+       
     }
 
-    public void google()
+    public void intro()
     {
-        SceneManager.LoadScene("Google");
+        SceneManager.LoadScene("Intro");
+        
     }
 
-    public void zoom()
+    public void google(int numofscene)
     {
-        SceneManager.LoadScene("Zoom");
+        switch (numofscene)
+        {
+            case 0:
+                SceneManager.LoadScene("Google");
+                break;
+            case 1:
+                SceneManager.LoadScene("GoogleMeet Settings");
+                break;
+            case 2:
+                SceneManager.LoadScene("GoogleMeet Monitor");
+                break;
+            case 3:
+                SceneManager.LoadScene("GoogleMeet Power");
+                break;
+            case 4:
+                SceneManager.LoadScene("GoogleMeet Video");
+                break;
+            case 5:
+                SceneManager.LoadScene("Google Projector");
+                break;
+            case 6:
+                SceneManager.LoadScene("Google ClassView");
+                break;
+
+        }
+    }
+
+    public void zoom(int numofscene)
+    {
+        switch (numofscene)
+        {
+            case 0:
+                SceneManager.LoadScene("Zoom");
+                break;
+            case 1:
+                SceneManager.LoadScene("Zoom Settings");
+                break;
+            case 2:
+                SceneManager.LoadScene("Zoom Monitor");
+                break;
+            case 3:
+                SceneManager.LoadScene("Zoom Power");
+                break;
+            case 4:
+                SceneManager.LoadScene("Zoom Video");
+                break;
+            case 5:
+                SceneManager.LoadScene("Zoom Projector");
+                break;
+            case 6:
+                SceneManager.LoadScene("Zoom ClassView");
+                break;
+
+        }
     }
     public void menu()
     {
         SceneManager.LoadScene("Menu");
     }
 
-    public void connect()
+    public void projector()
     {
-        SceneManager.LoadScene("Connecting");
+        SceneManager.LoadScene("Projector");
     }
 
     public void classview()
     {
-        SceneManager.LoadScene("Classview");
+        SceneManager.LoadScene("ClassView");
     }
 
     //Turns off Object (Sets it to inactive)
